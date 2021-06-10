@@ -1,8 +1,8 @@
 # Secure Audits for Machine Learning Attacks
 
-####Presented at MLOps World 2021 on June 16th
+#### Presented at MLOps World 2021 on June 16th
 
-####Presenters: Navdeep Gill & Michelle Tanco
+#### Presenters: Navdeep Gill & Michelle Tanco
 
 ## Abstract
 
@@ -11,6 +11,6 @@ There are several known attacks against ML models that can lead to altered, harm
 ![](img/cheatsheet.png)
 Source: O'Reilly Media, [_Responsible Machine Learning_](http://info.h2o.ai/rs/644-PKX-778/images/OReilly_Responsible_ML_eBook.pdf), Patrick Hall, Navdeep Gill, and Benjamin Cox.
 
-##References
+## References
 * [*Proposals for model vulnerability and security*](https://www.oreilly.com/ideas/proposals-for-model-vulnerability-and-security) on O'Reilly Ideas
 * [*Can Your Machine Learning Model Be Hacked?!*](https://www.h2o.ai/blog/can-your-machine-learning-model-be-hacked/) on the [h2o.ai](https://www.h2o.ai) blog site.
