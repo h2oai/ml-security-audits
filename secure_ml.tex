@@ -173,8 +173,8 @@ A majority of the time, ackers, malicious insiders, and their criminal associate
 Due to a lack of security or a distributed attack on your model API, hackers can simulate data, submit it, receive predictions, and train a surrogate model between their simulated data and your model predictions. This surrogate can ...
 				\vspace{10pt}
 				\begin{itemize}
-				\item expose your proprietary business logic, i.e. ``model stealing'' \cite{model_stealing}. 
-				\item reveal sensitive aspects of your training data. 
+				\item expose your proprietary business logic, which can be known as ``model stealing'' \cite{model_stealing}. 
+				\item reveal sensitive information based on your training data.
 				\item be the first stage of a membership inference attack (see Slide \ref{slide:membership}).
 				\item be a test-bed for adversarial example attacks (see Slide \ref{slide:adversary}). 
 				\end{itemize}
@@ -197,10 +197,10 @@ Due to a lack of security or a distributed attack on your model API, hackers can
 		
 				\frametitle{Surrogate Model Inversion Attacks: \textbf{Defenses}}
 				\begin{itemize}
-					\item \textbf{Authentication}: Authenticate users of your model’s API or other endpoints. This is probably one of the most effective defenses for this type of attack.
-					\item \textbf{Defensive watermarks}: Add subtle or unusual information to your model’s predictions to aid in forensic analysis if your model is hacked or stolen.
-					\item \textbf{Throttling}: Consider artificially slowing down your prediction response times, especially after anomalous behavior is detected.
-					\item \textbf{White-hat surrogate models}: Train your own surrogate models as a white-hat hacking exercise to see what an attacker could learn about your public models.
+					\item \textbf{Authentication}: Authenticate consumers of your model’s API or other relevant endpoints. This is probably one of the most effective defenses for this type of attack as it can stop hackers before they can even start.
+					\item \textbf{Defensive watermarks}: Add subtle information to your model’s predictions to aid in forensic analysis if your model is hacked or stolen. This is similar to a physical watermark you would see in the real world, e.g., a watermark you would see on a US currency, which can help catch fake vs. real currency.
+					\item \textbf{Throttling}: Consider slowing down your prediction response times, especially after anomalous behavior is detected. This will give you and your team time to evaluate any potential wrongdoing and take the necessary steps toward remediation.
+					\item \textbf{White-hat surrogate models}: Train your own surrogate models as a white-hat hacking exercise to see what an attacker could learn about your public models. This will give you the opportunity to build protections against this type of attack.
 				\end{itemize}
 				
 			\end{frame}
