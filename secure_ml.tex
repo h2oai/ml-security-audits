@@ -115,7 +115,7 @@ A majority of the time, hackers, malicious insiders, and their criminal associat
 				\begin{itemize}
 					\item \textbf{Disparate impact analysis}: Look for discrimination in your model’s predictions. 
 					\item \textbf{Fair or private models}: Examples include, but are not limited to, learning fair representations (LFR), private aggregation of teacher ensembles (PATE) \cite{pate}, \cite{lfr}.
-					\item \textbf{Reject on negative impact (RONI) analysis}: See: \textit{\citefield{security_of_ml}{title}} \cite{security_of_ml}. 		
+					\item \textbf{Reject on negative impact (RONI) analysis}: RONI is a technique that removes rows of data from the training data set that decrease prediction accuracy.  See: \textit{\citefield{security_of_ml}{title}} \cite{security_of_ml}. 		
 					\item \textbf{Residual analysis}: Specifically, look for large positive deviance residuals. Additionally, look for anomalous behavior in negative deviance residuals.
 					\item \textbf{Self-reflection}: Score your models on your employees, consultants, and contractors and look for anomalously beneficial predictions.
 				\end{itemize}	
@@ -130,11 +130,9 @@ A majority of the time, hackers, malicious insiders, and their criminal associat
 				\frametitle{Backdoors and Watermarks: \textbf{What?}}
 				\begin{itemize}
 				\item Hackers infiltrate your production scoring system OR ... 
-				\item People in your organization (malicious or extorted data science or IT insiders) change your production scoring code pre/during deployment ... 
+				\item People in your organization (malicious or extorted data science or IT insiders) change your production scoring code pre/during deployment by adding a backdoor that can be exploited using water-marked data, which is a unique set of information that causes a desired response from the hacked scoring system.
 				\end{itemize}
 				\vspace{20pt}
-\hspace{10pt} ... adding a backdoor that can be exploited using water-marked data.
-			
 			\end{frame}
 		
 			\begin{frame}
