@@ -1,4 +1,4 @@
-# Secure Audits for Machine Learning Attacks
+# Security Audits for Machine Learning Attacks
 
 #### Presented at MLOps World 2021 on June 16th
 
